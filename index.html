@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | RMO Art</title>
+  <meta name="description" content="Original artwork by Richard Oldfield. Watercolours, urban sketching, oil, acrylic and portraits.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html"><span>RMO</span> Art</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="sales.html">Sales</a>
+    </div>
+  </nav>
+</header>
+
+
+<main>
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Original artwork · Richard Oldfield</div>
+      <h1>Art by Richard Oldfield</h1>
+      <p class="lede">Colourful original paintings, sketches and portraits inspired by place, character, light and everyday observation.</p>
+      <div class="actions">
+        <a class="button primary" href="gallery.html">View the gallery</a>
+        <a class="button secondary" href="sales.html">Sales enquiries</a>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">Facebook coming soon</a>
+        <a href="#" aria-label="Instagram">Instagram coming soon</a>
+      </div>
+    </div>
+    <div class="hero-stack" aria-label="Featured artwork placeholders">
+      <div class="hero-card"><div class="placeholder-art" style="--c1:#ec5b7b;--c2:#ffb84d;--c3:#7c5cff;"></div></div>
+      <div class="hero-card"><div class="placeholder-art" style="--c1:#3db6a3;--c2:#ffe66d;--c3:#4d96ff;"></div></div>
+      <div class="hero-card"><div class="placeholder-art" style="--c1:#ff7a59;--c2:#8fd694;--c3:#845ec2;"></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Featured works</h2>
+      <p class="lede">Replace these placeholders with three strong pieces that represent the range of RMO Art.</p>
+    </div>
+    <div class="grid three">
+      <article class="art-card">
+        <div class="art-image placeholder-art" style="--c1:#ff9a9e;--c2:#fad0c4;--c3:#fbc2eb;"></div>
+        <div class="art-body">
+          <span class="badge">Watercolour</span>
+          <h3>Artwork title one</h3>
+          <p class="meta">Original painting · size and medium here</p>
+        </div>
+      </article>
+      <article class="art-card">
+        <div class="art-image placeholder-art" style="--c1:#a1c4fd;--c2:#c2e9fb;--c3:#84fab0;"></div>
+        <div class="art-body">
+          <span class="badge">Urban sketching</span>
+          <h3>Artwork title two</h3>
+          <p class="meta">Original sketch · size and medium here</p>
+        </div>
+      </article>
+      <article class="art-card">
+        <div class="art-image placeholder-art" style="--c1:#f6d365;--c2:#fda085;--c3:#f093fb;"></div>
+        <div class="art-body">
+          <span class="badge">Oil & acrylic</span>
+          <h3>Artwork title three</h3>
+          <p class="meta">Original artwork · size and medium here</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><strong>RMO Art</strong><br>Original art by Richard Oldfield</div>
+    <div>© <span id="year"></span> RMO Art · rmoart.co.uk</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
