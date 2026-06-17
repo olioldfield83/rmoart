@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sales & Contact | RMO Art</title>
-  <meta name="description" content="Original artwork by Richard Oldfield. Watercolours, urban sketching, oil, acrylic and portraits.">
+  <meta name="description" content="Sales enquiries and commission artwork requests for RMO Art by Richard Oldfield.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,47 +22,147 @@
   </nav>
 </header>
 
-
-<main class="section">
-  <div class="section-head">
-    <div class="eyebrow">Sales enquiries</div>
-    <h1>Sales & contact</h1>
-    <p class="lede">Interested in an original artwork? Use this page for purchase enquiries, availability checks, local collection and delivery questions.</p>
-  </div>
-
-  <div class="grid two">
-    <div class="panel">
-      <h2>Buying original artwork</h2>
-      <p>Replace this holding text with your sales process. For example: confirm availability, arrange payment through PayPal, agree collection or delivery, then dispatch once payment has cleared.</p>
-      <p class="notice"><strong>Contact email </strong><br><a href="mailto:richard@rmoart.co.uk">richard@rmoart.co.uk</a></p>
-      <div class="actions">
-        <a class="button primary" href="mailto:richard@rmoart.co.uk?subject=RMO%20Art%20sales%20enquiry">Email sales enquiry</a>
-        <a class="button secondary" href="gallery.html">Return to gallery</a>
-      </div>
+<main>
+  <section class="section">
+    <div class="section-head">
+      <div class="eyebrow">Sales enquiries</div>
+      <h1>Sales & Contact</h1>
+      <p class="lede">
+        Interested in an original artwork or a commissioned piece? Use this page for purchase enquiries,
+        availability checks, local collection, delivery questions and commission requests.
+      </p>
     </div>
 
-    <div class="panel">
-      <h2>Useful details to include</h2>
-      <p>When someone enquires, ask them to include:</p>
-      <ul>
-        <li>The artwork title</li>
-        <li>Whether they need delivery or collection</li>
-        <li>Their location</li>
-        <li>Any framing questions</li>
-      </ul>
-      <h3>Social links</h3>
-      <div class="socials">
-       <a href="https://facebook.com/rmoart" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-        Facebook
-       </a>
-       <a href="https://instagram.com/rmoart55" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        Instagram
-       </a>
+    <div class="grid two">
+      <div class="panel">
+        <h2>Buying original artwork</h2>
+
+        <p>
+          If you are interested in buying an original painting, please email with the artwork title
+          and any questions about availability, framing, collection or delivery.
+        </p>
+
+        <p>
+          Each original artwork is one of a kind. Availability may change, so please enquire before
+          making payment or arranging collection.
+        </p>
+
+        <p class="notice">
+          <strong>Sales enquiries:</strong><br>
+          <a href="mailto:sales@rmoart.co.uk?subject=RMO%20Art%20sales%20enquiry">
+            sales@rmoart.co.uk
+          </a>
+        </p>
+
+        <div class="actions">
+          <a class="button primary" href="mailto:sales@rmoart.co.uk?subject=RMO%20Art%20sales%20enquiry">
+            Email sales enquiry
+          </a>
+          <a class="button secondary" href="gallery.html">
+            View gallery
+          </a>
+        </div>
+
+        <h3>Useful details to include</h3>
+        <ul>
+          <li>The artwork title</li>
+          <li>Whether you would prefer delivery or collection</li>
+          <li>Your location</li>
+          <li>Any framing questions</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h2>Commission artwork</h2>
+
+        <p>
+          Richard is available for selected commission work, including portraits, pet portraits,
+          buildings, landscapes, urban sketches, places with personal meaning and special gifts.
+        </p>
+
+        <p>
+          To request a commission, please provide as much detail as possible, including the type of
+          artwork, preferred size, medium, budget and any reference images.
+        </p>
+
+        <form class="commission-form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+              enctype="multipart/form-data">
+
+          <label>
+            Your name
+            <input type="text" name="name" required>
+          </label>
+
+          <label>
+            Your email
+            <input type="email" name="email" required>
+          </label>
+
+          <label>
+            Type of artwork
+            <select name="artwork_type" required>
+              <option value="">Please choose</option>
+              <option value="Portrait">Portrait</option>
+              <option value="Pet portrait">Pet portrait</option>
+              <option value="House or building">House or building</option>
+              <option value="Landscape">Landscape</option>
+              <option value="Urban sketch">Urban sketch</option>
+              <option value="Greeting card design">Greeting card design</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+
+          <label>
+            Preferred medium
+            <select name="medium" required>
+              <option value="">Please choose</option>
+              <option value="Watercolour">Watercolour</option>
+              <option value="Pen and wash">Pen and wash</option>
+              <option value="Oil">Oil</option>
+              <option value="Acrylic">Acrylic</option>
+              <option value="Pencil drawing">Pencil drawing</option>
+              <option value="Not sure">Not sure</option>
+            </select>
+          </label>
+
+          <label>
+            Preferred size
+            <input type="text" name="size" placeholder="e.g. A4, A3, 30 × 40 cm">
+          </label>
+
+          <label>
+            Approximate budget
+            <input type="text" name="budget" placeholder="e.g. £150–£300">
+          </label>
+
+          <label>
+            Upload reference image
+            <input type="file" name="reference_image" accept="image/*">
+          </label>
+
+          <label>
+            Commission details
+            <textarea name="message" rows="6" required
+              placeholder="Tell me what you would like commissioned, who or what it is for, preferred colours, deadline, framing requirements, and any other details."></textarea>
+          </label>
+
+          <input type="hidden" name="_subject" value="New RMO Art commission enquiry">
+
+          <button class="button primary" type="submit">
+            Send commission enquiry
+          </button>
+        </form>
+
+        <p class="meta">
+          This form requires a form service such as Formspree to send submissions to
+          <strong>richard@rmoart.co.uk</strong>. Replace <code>YOUR_FORM_ID</code> with your real form ID.
+        </p>
       </div>
     </div>
-  </div>
+  </section>
 </main>
-
 
 <footer class="footer">
   <div class="footer-inner">
@@ -70,7 +170,10 @@
     <div>© <span id="year"></span> RMO Art · rmoart.co.uk</div>
   </div>
 </footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
