@@ -12,14 +12,6 @@ Professional static website starter for RMO Art.
 6. Replace the dummy images in `assets/images/`.
 7. Replace holding text, prices, descriptions, and PayPal button links.
 
-## PayPal buttons
-
-Each artwork card currently uses a placeholder PayPal link:
-
-`https://www.paypal.com/checkoutnow?token=REPLACE_ME`
-
-Replace that with your real PayPal payment link or PayPal button code.
-
 ## Site pages
 
 - `index.html` — Homepage
@@ -27,4 +19,5 @@ Replace that with your real PayPal payment link or PayPal button code.
 - `gallery.html` — Art gallery with categories
 - `exhibitions.html` — Exhibition information
 - `sales.html` — Sales and enquiries
+
 # rmoart
