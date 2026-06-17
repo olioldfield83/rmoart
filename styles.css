@@ -434,7 +434,11 @@ a.art-card:hover {
 }
 
 .sales-panel .actions {
-  margin: 8px 0 18px;
+  margin: 12px 0 38px;
+}
+
+.sales-panel .actions + h3 {
+  margin-top: 8px;
 }
 
 .sales-panel .socials {
