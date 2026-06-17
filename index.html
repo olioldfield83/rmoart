@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="styles.css">
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-75J8XZVFWK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-75J8XZVFWK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-75J8XZVFWK');
-</script>
+    gtag('config', 'G-75J8XZVFWK');
+  </script>
 </head>
 <body>
 
@@ -23,7 +23,7 @@
   <nav class="nav">
     <a class="brand" href="index.html"><span>RMO</span> Art</a>
     <div class="nav-links">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="gallery.html">Gallery</a>
       <a href="exhibitions.html">Exhibitions</a>
@@ -32,81 +32,83 @@
   </nav>
 </header>
 
-
 <main>
 
-<section class="hero-full">
+  <section class="hero-full">
+    <div class="hero-content">
+      <div class="eyebrow">Original artwork · Richard Oldfield</div>
 
-  <div class="hero-content">
+      <h1>Art by Richard Oldfield</h1>
 
-    <div class="eyebrow">Original artwork · Richard Oldfield</div>
+      <p class="lede">
+        Colourful original paintings, sketches and portraits inspired by
+        place, character, light and everyday observation.
+      </p>
 
-    <h1>Art by Richard Oldfield</h1>
+      <div class="actions">
+        <a class="button primary" href="gallery.html">View the gallery</a>
+        <a class="button secondary" href="sales.html">Sales enquiries</a>
+      </div>
 
-    <p class="lede">
-      Colourful original paintings, sketches and portraits inspired by
-      place, character, light and everyday observation.
-    </p>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61590586396566" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <span class="social-icon">f</span>
+          Facebook
+        </a>
 
-    <div class="actions">
-      <a class="button primary" href="gallery.html">View the gallery</a>
-      <a class="button secondary" href="sales.html">Sales enquiries</a>
+        <a href="https://instagram.com/rmoart55" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <span class="social-icon">◎</span>
+          Instagram
+        </a>
+      </div>
     </div>
-
-    <div class="socials">
-  <a href="https://www.facebook.com/profile.php?id=61590586396566" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-    <span class="social-icon">f</span>
-    Facebook
-  </a>
-
-  <a href="https://instagram.com/rmoart55" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-    <span class="social-icon">◎</span>
-    Instagram
-  </a>
-</div>
-
-</section>
+  </section>
 
   <section class="section">
     <div class="section-head">
       <h2>Featured work</h2>
       <p class="lede">These three paintings are some of my favourites, which I love to display.</p>
     </div>
-     <div class="grid three">
-     <article class="art-card">
-     <img class="art-image" src="assets/images/liverpool_liverbird.jpeg" alt="Stunning Liverpool waterfront">
-    <div class="art-body">
-    <span class="badge">Watercolours</span>
-    <h3>A view of the magnificent buildings down by the Albert Dock</h3>
-    <p>The Liver Bird stands proudly atop the Royal Liver Building.</p>
-    <p class="meta">Original artwork · One of a kind</p>
-    </div>
-    </article>
-      
-     <article class="art-card">
-     <img class="art-image" src="assets/images/autumn_forest.jpeg" alt="Enchanted forest path">
-    <div class="art-body">
-    <span class="badge">Watercolours</span>
-    <h3>Sometimes the path to take clearly presents itself</h3>
-    <p>There is always something magical at the seasons turn, especially into Autumn.</p>
-    <p class="meta">Original artwork · One of a kind</p>
-    </div>
-    </article>
-      
+
+    <div class="grid three">
+
       <article class="art-card">
-     <img class="art-image" src="assets/images/greek_steps.jpeg" alt="Gorgeous Greece">
-    <div class="art-body">
-    <span class="badge">Watercolours</span>
-    <h3>Stunning white-washed Greek houses</h3>
-    <p>A trip to Greece is always special, and I plan to return often.</p>
-    <p class="meta">Original artwork · One of a kind</p>
-    </div>
-    </article>
-       
+        <img class="art-image lightbox-image" src="assets/images/liverpool_liverbird.jpeg" alt="Fire and Sea">
+        <div class="art-body">
+          <span class="badge">Watercolours</span>
+          <h3>Fire and Sea</h3>
+          <p>A view of Liverpool waterfront, with the Liver Bird standing over the scene.</p>
+          <p class="meta">Watercolour · 36cm x 26cm · Framed 75cm x 40cm</p>
+          <a class="button primary" href="watercolours.html">View in gallery</a>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <img class="art-image lightbox-image" src="assets/images/autumn_forest.jpeg" alt="Autumn Glow">
+        <div class="art-body">
+          <span class="badge">Watercolours</span>
+          <h3>Autumn Glow</h3>
+          <p>There is always something magical at the season's turn, especially into autumn.</p>
+          <p class="meta">Watercolour · 36cm x 26cm · Mounted to fit frame 50cm x 40cm</p>
+          <a class="button primary" href="watercolours.html">View in gallery</a>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <img class="art-image lightbox-image" src="assets/images/greek_steps.jpeg" alt="Hill Top House">
+        <div class="art-body">
+          <span class="badge">Watercolours</span>
+          <h3>Hill Top House</h3>
+          <p>A painting of a hill top house in Serifos, Greece.</p>
+          <p class="meta">Watercolour · 36cm x 26cm · Mounted for frame 50cm x 40cm</p>
+          <a class="button primary" href="watercolours.html">View in gallery</a>
+        </div>
+      </article>
+
     </div>
   </section>
-</main>
 
+</main>
 
 <footer class="footer">
   <div class="footer-inner">
@@ -114,7 +116,28 @@
     <div>© <span id="year"></span> RMO Art · rmoart.co.uk</div>
   </div>
 </footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close" aria-label="Close image">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption">
+      <h3 id="lightbox-title"></h3>
+      <p id="lightbox-meta"></p>
+      <p id="lightbox-price"></p>
+    </div>
+  </div>
+
+  <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+</div>
+
+<script src="lightbox.js"></script>
 
 </body>
 </html>
