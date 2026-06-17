@@ -383,12 +383,23 @@ a.art-card:hover {
 }
 
 .socials a {
-  text-decoration: none;
-  border: 1px solid var(--line);
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
   border-radius: 999px;
-  padding: 9px 13px;
-  background: rgba(255, 255, 255, 0.75);
-  font-weight: 800;
+  font-size: 0.9rem;
+  font-weight: 950;
+  background: linear-gradient(135deg, var(--accent), var(--accent-4));
+  color: white;
+  line-height: 1;
 }
 
 .notice {
