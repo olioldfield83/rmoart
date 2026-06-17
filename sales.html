@@ -29,7 +29,7 @@
       <h1>Sales & Contact</h1>
       <p class="lede">
         Interested in an original artwork or a commissioned piece? Use this page for purchase enquiries,
-        availability checks, local collection, delivery questions and commission requests.
+        availability checks, collection, delivery questions and commission requests.
       </p>
     </div>
 
@@ -50,7 +50,7 @@
         <p class="notice">
           <strong>Sales enquiries:</strong><br>
           <a href="mailto:sales@rmoart.co.uk?subject=RMO%20Art%20sales%20enquiry">
-            sales@rmoart.co.uk
+            richard@rmoart.co.uk
           </a>
         </p>
 
@@ -70,6 +70,16 @@
           <li>Your location</li>
           <li>Any framing questions</li>
         </ul>
+
+        <h3>Social links</h3>
+        <div class="socials">
+          <a href="https://facebook.com/rmoart" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            Facebook
+          </a>
+          <a href="https://instagram.com/rmoart55" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            Instagram
+          </a>
+        </div>
       </div>
 
       <div class="panel">
@@ -81,28 +91,33 @@
         </p>
 
         <p>
-          To request a commission, please provide as much detail as possible, including the type of
-          artwork, preferred size, medium, budget and any reference images.
+          Complete the form below with as much information as possible. You can upload reference
+          photographs and describe the style, size and medium you have in mind.
         </p>
 
-        <form class="commission-form"
-              action="https://formspree.io/f/YOUR_FORM_ID"
-              method="POST"
-              enctype="multipart/form-data">
+        <!-- Include Forminit SDK -->
+        <script src="https://forminit.com/sdk/v1/forminit.js"></script>
+
+        <form id="commission-form" class="commission-form" enctype="multipart/form-data">
 
           <label>
-            Your name
-            <input type="text" name="name" required>
+            Full name
+            <input name="fi-sender-fullName" type="text" placeholder="Your full name" required>
           </label>
 
           <label>
-            Your email
-            <input type="email" name="email" required>
+            Email address
+            <input name="fi-sender-email" type="email" placeholder="your@email.com" required>
           </label>
 
           <label>
-            Type of artwork
-            <select name="artwork_type" required>
+            Phone number
+            <input name="fi-sender-phone" type="tel" placeholder="Optional">
+          </label>
+
+          <label>
+            What would you like commissioned?
+            <select name="fi-select-commissionType" required>
               <option value="">Please choose</option>
               <option value="Portrait">Portrait</option>
               <option value="Pet portrait">Pet portrait</option>
@@ -116,49 +131,98 @@
 
           <label>
             Preferred medium
-            <select name="medium" required>
+            <select name="fi-select-medium" required>
               <option value="">Please choose</option>
               <option value="Watercolour">Watercolour</option>
               <option value="Pen and wash">Pen and wash</option>
               <option value="Oil">Oil</option>
               <option value="Acrylic">Acrylic</option>
               <option value="Pencil drawing">Pencil drawing</option>
+              <option value="Coloured pencil">Coloured pencil</option>
               <option value="Not sure">Not sure</option>
             </select>
           </label>
 
           <label>
             Preferred size
-            <input type="text" name="size" placeholder="e.g. A4, A3, 30 × 40 cm">
+            <select name="fi-select-size">
+              <option value="">Please choose</option>
+              <option value="A5">A5</option>
+              <option value="A4">A4</option>
+              <option value="A3">A3</option>
+              <option value="A2">A2</option>
+              <option value="30 x 40 cm">30 × 40 cm</option>
+              <option value="Custom size">Custom size</option>
+              <option value="Not sure">Not sure</option>
+            </select>
+          </label>
+
+          <label>
+            Preferred surface
+            <select name="fi-select-surface">
+              <option value="">Please choose</option>
+              <option value="Paper">Paper</option>
+              <option value="Canvas">Canvas</option>
+              <option value="Board">Board</option>
+              <option value="No preference">No preference</option>
+            </select>
           </label>
 
           <label>
             Approximate budget
-            <input type="text" name="budget" placeholder="e.g. £150–£300">
+            <input name="fi-number-budget" type="number" min="0" step="1" placeholder="e.g. 250">
           </label>
 
           <label>
-            Upload reference image
-            <input type="file" name="reference_image" accept="image/*">
+            Desired completion date
+            <input name="fi-date-deadline" type="date">
+          </label>
+
+          <label>
+            Upload reference photographs
+            <input name="fi-file-referenceImages[]" type="file" accept="image/*" multiple>
           </label>
 
           <label>
             Commission details
-            <textarea name="message" rows="6" required
-              placeholder="Tell me what you would like commissioned, who or what it is for, preferred colours, deadline, framing requirements, and any other details."></textarea>
+            <textarea
+              name="fi-text-message"
+              rows="7"
+              required
+              placeholder="Tell Richard what you would like commissioned. Include details such as subject, preferred colours, style, framing requirements, deadline, and anything else that would help."></textarea>
           </label>
 
-          <input type="hidden" name="_subject" value="New RMO Art commission enquiry">
-
           <button class="button primary" type="submit">
-            Send commission enquiry
+            Request commission quote
           </button>
+
+          <p id="form-status" class="meta"></p>
         </form>
 
-        <p class="meta">
-          This form requires a form service such as Formspree to send submissions to
-          <strong>richard@rmoart.co.uk</strong>. Replace <code>YOUR_FORM_ID</code> with your real form ID.
-        </p>
+        <script>
+          const forminit = new Forminit();
+          const FORM_ID = "juji76mr13d";
+
+          document.getElementById("commission-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+            const status = document.getElementById("form-status");
+
+            status.textContent = "Sending your commission enquiry...";
+
+            const { data, error } = await forminit.submit(FORM_ID, formData);
+
+            if (error) {
+              status.textContent = "Sorry, something went wrong. Please email richard@rmoart.co.uk instead.";
+              return;
+            }
+
+            status.textContent = "Thank you. Your commission enquiry has been sent successfully.";
+            form.reset();
+          });
+        </script>
       </div>
     </div>
   </section>
