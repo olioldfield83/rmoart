@@ -430,4 +430,15 @@ h3 {
     align-items: flex-start;
     flex-direction: column;
   }
+
+  a.art-card {
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.art-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(31, 23, 38, 0.18);
+}
 }
