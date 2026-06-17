@@ -29,6 +29,16 @@ function openLightbox(index) {
 
   lightbox.classList.add('active');
   document.body.style.overflow = 'hidden';
+
+  if (typeof gtag === 'function') {
+    gtag('event', 'artwork_lightbox_open', {
+      item_title: details.title,
+      item_meta: details.meta,
+      item_price: details.price,
+      image_src: image.getAttribute('src'),
+      page_path: window.location.pathname
+    });
+  }
 }
 
 function closeLightbox() {
@@ -55,9 +65,7 @@ document.querySelector('.lightbox-next')?.addEventListener('click', showNext);
 document.querySelector('.lightbox-prev')?.addEventListener('click', showPrevious);
 
 lightbox?.addEventListener('click', (event) => {
-  if (event.target === lightbox) {
-    closeLightbox();
-  }
+  if (event.target === lightbox) closeLightbox();
 });
 
 document.addEventListener('keydown', (event) => {
