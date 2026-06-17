@@ -289,6 +289,17 @@ h3 {
   overflow: hidden;
 }
 
+a.art-card {
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.art-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(31, 23, 38, 0.18);
+}
+
 .art-image {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -357,6 +368,46 @@ h3 {
   font-weight: 800;
 }
 
+.notice {
+  padding: 18px;
+  border-left: 5px solid var(--accent);
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 18px;
+}
+
+/* Commission form */
+
+.commission-form {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.commission-form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.commission-form input,
+.commission-form select,
+.commission-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  font: inherit;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--ink);
+}
+
+.commission-form textarea {
+  resize: vertical;
+}
+
+/* Footer */
+
 .footer {
   margin-top: 48px;
   padding: 36px 22px;
@@ -371,13 +422,6 @@ h3 {
   justify-content: space-between;
   gap: 18px;
   flex-wrap: wrap;
-}
-
-.notice {
-  padding: 18px;
-  border-left: 5px solid var(--accent);
-  background: rgba(255, 255, 255, 0.78);
-  border-radius: 18px;
 }
 
 /* Mobile */
@@ -430,43 +474,4 @@ h3 {
     align-items: flex-start;
     flex-direction: column;
   }
-
-  a.art-card {
-  color: inherit;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-a.art-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 24px 60px rgba(31, 23, 38, 0.18);
-}
-  .commission-form {
-  display: grid;
-  gap: 14px;
-  margin-top: 20px;
-}
-
-.commission-form label {
-  display: grid;
-  gap: 6px;
-  font-weight: 800;
-  color: var(--ink);
-}
-
-.commission-form input,
-.commission-form select,
-.commission-form textarea {
-  width: 100%;
-  padding: 12px 14px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  font: inherit;
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--ink);
-}
-
-.commission-form textarea {
-  resize: vertical;
-}
 }
