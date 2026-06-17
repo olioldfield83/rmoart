@@ -97,14 +97,34 @@ img {
   background: rgba(236, 91, 123, 0.12);
 }
 
-.hero {
+/* Homepage hero */
+
+.hero,
+.hero-full {
   max-width: 1180px;
   margin: 0 auto;
   padding: 72px 22px 48px;
+}
+
+.hero {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
   gap: 44px;
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.hero-content h1 {
+  font-size: clamp(3rem, 7vw, 6.8rem);
+  line-height: 1.06;
+  margin-bottom: 30px;
+}
+
+.hero-content .lede {
+  max-width: 760px;
 }
 
 .eyebrow {
@@ -221,6 +241,8 @@ h3 {
     radial-gradient(circle at 50% 75%, rgba(255,255,255,0.54) 0 10%, transparent 11%),
     linear-gradient(135deg, var(--c1), var(--c2), var(--c3));
 }
+
+/* Sections */
 
 .section {
   max-width: 1180px;
@@ -358,10 +380,16 @@ h3 {
   border-radius: 18px;
 }
 
+/* Mobile */
+
 @media (max-width: 850px) {
+  .hero,
+  .hero-full {
+    padding-top: 48px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
-    padding-top: 48px;
   }
 
   .hero-stack {
