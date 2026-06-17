@@ -50,7 +50,7 @@
         <p class="notice">
           <strong>Sales enquiries:</strong><br>
           <a href="mailto:sales@rmoart.co.uk?subject=RMO%20Art%20sales%20enquiry">
-            richard@rmoart.co.uk
+            sales@rmoart.co.uk
           </a>
         </p>
 
@@ -95,10 +95,12 @@
           photographs and describe the style, size and medium you have in mind.
         </p>
 
-        <!-- Include Forminit SDK -->
-        <script src="https://forminit.com/sdk/v1/forminit.js"></script>
-
-        <form id="commission-form" class="commission-form" enctype="multipart/form-data">
+        <form
+          id="commission-form"
+          class="commission-form"
+          action="https://submit.forminit.com/f/juji76mr13d"
+          method="POST"
+          enctype="multipart/form-data">
 
           <label>
             Full name
@@ -192,37 +194,12 @@
               placeholder="Tell Richard what you would like commissioned. Include details such as subject, preferred colours, style, framing requirements, deadline, and anything else that would help."></textarea>
           </label>
 
+          <input type="hidden" name="_subject" value="New RMO Art commission enquiry">
+
           <button class="button primary" type="submit">
             Request commission quote
           </button>
-
-          <p id="form-status" class="meta"></p>
         </form>
-
-        <script>
-          const forminit = new Forminit();
-          const FORM_ID = "juji76mr13d";
-
-          document.getElementById("commission-form").addEventListener("submit", async (e) => {
-            e.preventDefault();
-
-            const form = e.target;
-            const formData = new FormData(form);
-            const status = document.getElementById("form-status");
-
-            status.textContent = "Sending your commission enquiry...";
-
-            const { data, error } = await forminit.submit(FORM_ID, formData);
-
-            if (error) {
-              status.textContent = "Sorry, something went wrong. Please email richard@rmoart.co.uk instead.";
-              return;
-            }
-
-            status.textContent = "Thank you. Your commission enquiry has been sent successfully.";
-            form.reset();
-          });
-        </script>
       </div>
     </div>
   </section>
