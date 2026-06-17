@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="styles.css">
   
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-75J8XZVFWK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-75J8XZVFWK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-75J8XZVFWK');
-</script>
+    gtag('config', 'G-75J8XZVFWK');
+  </script>
 </head>
 <body>
 
@@ -43,7 +43,7 @@
     <div class="grid three">
 
       <article class="art-card">
-        <img class="art-image" src="assets/images/greeting-cards.jpeg" alt="Santa and his reindeer being cheered off by elves">
+        <img class="art-image lightbox-image" src="assets/images/greeting-cards.jpeg" alt="Santa getting ready">
         <div class="art-body">
           <span class="badge">Greeting cards</span>
           <h3>Santa getting ready</h3>
@@ -57,7 +57,7 @@
       </article>
 
       <article class="art-card">
-        <img class="art-image" src="assets/images/easter.jpeg" alt="Playful lambs avoiding their fate">
+        <img class="art-image lightbox-image" src="assets/images/easter.jpeg" alt="Lamb's Least Favourite Season">
         <div class="art-body">
           <span class="badge">Greeting cards</span>
           <h3>Lamb's Least Favourite Season</h3>
@@ -71,7 +71,7 @@
       </article>
 
       <article class="art-card">
-        <img class="art-image" src="assets/images/christmas.jpeg" alt="Geese at Christmas">
+        <img class="art-image lightbox-image" src="assets/images/christmas.jpeg" alt="Geese at Christmas">
         <div class="art-body">
           <span class="badge">Greeting cards</span>
           <h3>Geese at Christmas</h3>
@@ -85,7 +85,7 @@
       </article>
 
       <article class="art-card">
-        <img class="art-image" src="assets/images/big_ben.jpeg" alt="Big Ben and the Houses of Parliament">
+        <img class="art-image lightbox-image" src="assets/images/big_ben.jpeg" alt="Big Ben">
         <div class="art-body">
           <span class="badge">Greeting cards</span>
           <h3>Big Ben</h3>
@@ -99,7 +99,7 @@
       </article>
 
       <article class="art-card">
-        <img class="art-image" src="assets/images/mostar.jpeg" alt="Mostar bridge in Bosnia and Herzegovina">
+        <img class="art-image lightbox-image" src="assets/images/mostar.jpeg" alt="Mostar">
         <div class="art-body">
           <span class="badge">Greeting cards</span>
           <h3>Mostar</h3>
@@ -126,6 +126,24 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close" aria-label="Close image">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption">
+      <h3 id="lightbox-title"></h3>
+      <p id="lightbox-meta"></p>
+      <p id="lightbox-price"></p>
+    </div>
+  </div>
+
+  <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+</div>
+
+<script src="lightbox.js"></script>
 
 </body>
 </html>
