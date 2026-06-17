@@ -587,3 +587,32 @@ a.art-card:hover {
     width: 100%;
   }
 }
+/* Better artwork card spacing and button alignment */
+
+.art-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.art-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.art-body .badge {
+  margin-bottom: 16px;
+}
+
+.art-body h3 {
+  margin-bottom: 22px;
+}
+
+.art-body .button {
+  margin-top: auto;
+  width: fit-content;
+}
+
+.art-body .price {
+  margin-top: 18px;
+}
