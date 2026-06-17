@@ -187,6 +187,7 @@ h3 {
   text-decoration: none;
   font-weight: 900;
   box-shadow: 0 8px 24px rgba(31, 23, 38, 0.08);
+  cursor: pointer;
 }
 
 .button.primary {
@@ -253,6 +254,10 @@ h3 {
 .section-head {
   max-width: 760px;
   margin-bottom: 30px;
+}
+
+.section-head .button {
+  margin-bottom: 24px;
 }
 
 .grid {
@@ -402,8 +407,31 @@ a.art-card:hover {
   color: var(--ink);
 }
 
+.commission-form input[type="file"] {
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.commission-form input:focus,
+.commission-form select:focus,
+.commission-form textarea:focus {
+  outline: none;
+  border-color: rgba(124, 92, 255, 0.65);
+  box-shadow: 0 0 0 4px rgba(124, 92, 255, 0.12);
+}
+
 .commission-form textarea {
   resize: vertical;
+  min-height: 180px;
+}
+
+.commission-form .button {
+  margin-top: 8px;
+  width: fit-content;
+}
+
+#form-status {
+  min-height: 1.5em;
 }
 
 /* Footer */
@@ -473,5 +501,13 @@ a.art-card:hover {
   .category-title {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .commission-form .button {
+    width: 100%;
   }
 }
