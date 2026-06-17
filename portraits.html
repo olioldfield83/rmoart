@@ -1,1 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portraits | RMO Art</title>
+  <meta name="description" content="Original portraits and portrait commissions by Richard Oldfield.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html"><span>RMO</span> Art</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="sales.html">Sales</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="section">
+    <div class="section-head">
+      <a class="button secondary" href="gallery.html">← Back to Gallery</a>
+      <h1>Portraits</h1>
+      <p class="lede">Original portrait studies and commissioned portrait artwork celebrating character and personality.</p>
+    </div>
+
+    <div class="grid three">
+      <article class="art-card">
+        <img class="art-image" src="assets/images/portrait-placeholder.jpeg" alt="Portrait artwork">
+        <div class="art-body">
+          <span class="badge">Portrait</span>
+          <h3>Portrait Study</h3>
+          <p>A characterful portrait study. Replace this text with details about the subject, medium and style.</p>
+          <p class="meta">Original artwork · Medium and size here</p>
+          <div class="price">Price on enquiry</div>
+          <a class="button primary" href="mailto:richard@rmoart.co.uk?subject=Enquiry%20about%20Portrait%20Study">Enquire about this artwork</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><strong>RMO Art</strong><br>Original art by Richard Oldfield</div>
+    <div>© <span id="year"></span> RMO Art · rmoart.co.uk</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
