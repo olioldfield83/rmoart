@@ -78,4 +78,11 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+  <loc>https://rmoart.co.uk/art/chasing-the-storm.html</loc>
+  <lastmod>2026-06-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
 </urlset>
