@@ -378,16 +378,18 @@ a.art-card:hover {
 /* Artwork detail pages */
 
 .artwork-detail-image {
-  display: inline-block;
-  width: fit-content;
+  display: block;
+  width: 100%;
   max-width: 100%;
+  height: fit-content;
+  align-self: start;
   overflow: hidden;
 }
 
 .artwork-detail-image img {
   width: 100%;
   height: auto;
-  max-height: 75vh;
+  aspect-ratio: auto;
   object-fit: contain;
   display: block;
 }
