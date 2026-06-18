@@ -10,26 +10,31 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "VisualArtist",
-    "name": "Richard Oldfield",
-    "alternateName": "RMO Art",
-    "url": "https://rmoart.co.uk/",
-    "image": "https://rmoart.co.uk/assets/images/dad.jpg",
-    "description": "Original artwork by Richard Oldfield, including watercolours, urban sketching, oil, acrylic, portraits and greeting cards.",
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=61590586396566",
-      "https://instagram.com/rmoart55"
-    ],
-    "knowsAbout": [
-      "Watercolour painting",
-      "Urban sketching",
-      "Oil painting",
-      "Acrylic painting",
-      "Portraits",
-      "Greeting cards"
-    ]
-  }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "url": "https://rmoart.co.uk/",
+      "name": "RMO Art",
+      "description": "Original artwork by Richard Oldfield.",
+      "publisher": {
+        "@id": "https://rmoart.co.uk/#richard"
+      }
+    },
+    {
+      "@id": "https://rmoart.co.uk/#richard",
+      "@type": "Person",
+      "name": "Richard Oldfield",
+      "jobTitle": "Artist",
+      "url": "https://rmoart.co.uk/",
+      "image": "https://rmoart.co.uk/assets/images/dad.jpg",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61590586396566",
+        "https://instagram.com/rmoart55"
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
