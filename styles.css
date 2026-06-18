@@ -711,3 +711,30 @@ a.art-card:hover {
     max-height: 68vh;
   }
 }
+
+.art-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.sold-ribbon {
+  position: absolute;
+  top: 18px;
+  right: -42px;
+  width: 160px;
+  padding: 8px 0;
+
+  background: #d62828;
+  color: white;
+
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  transform: rotate(45deg);
+
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+
+  z-index: 5;
+}
