@@ -42,6 +42,17 @@ document.addEventListener('click', function (event) {
     });
   }
 
+  if (text.toLowerCase().includes('view artwork details')) {
+    gtag('event', 'view_artwork_details_click', {
+      item_title: itemTitle,
+      item_meta: itemMeta,
+      item_price: itemPrice,
+      link_text: text,
+      link_url: href,
+      page_path: window.location.pathname
+    });
+  }
+
   if (href.includes('facebook.com')) {
     gtag('event', 'social_click', {
       platform: 'Facebook',
@@ -64,7 +75,13 @@ document.addEventListener('click', function (event) {
     });
   }
 
-  if (href.includes('watercolours.html') || href.includes('greeting-cards.html') || href.includes('urban-sketching.html') || href.includes('oil-acrylic.html') || href.includes('portraits.html')) {
+  if (
+    href.includes('watercolours.html') ||
+    href.includes('greeting-cards.html') ||
+    href.includes('urban-sketching.html') ||
+    href.includes('oil-acrylic.html') ||
+    href.includes('portraits.html')
+  ) {
     gtag('event', 'gallery_category_opened', {
       category: text,
       link_url: href,
