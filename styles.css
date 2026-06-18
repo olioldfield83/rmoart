@@ -330,7 +330,10 @@ a.art-card:hover {
 }
 
 .art-body {
-  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  height: 100%;
 }
 
 .meta {
@@ -340,9 +343,10 @@ a.art-card:hover {
 }
 
 .price {
-  font-size: 1.3rem;
-  font-weight: 950;
-  margin: 16px 0;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: auto;
+  margin-bottom: 18px;
 }
 
 .category {
