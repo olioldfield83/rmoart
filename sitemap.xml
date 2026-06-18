@@ -3,86 +3,126 @@
 
   <url>
     <loc>https://rmoart.co.uk/</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://rmoart.co.uk/about.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://rmoart.co.uk/gallery.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://rmoart.co.uk/watercolours.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://rmoart.co.uk/oils.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://rmoart.co.uk/urban-sketching.html</loc>
   </url>
 
   <url>
-    <loc>https://rmoart.co.uk/acrylics.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://rmoart.co.uk/urban-sketches.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://rmoart.co.uk/oil-acrylic.html</loc>
   </url>
 
   <url>
     <loc>https://rmoart.co.uk/portraits.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://rmoart.co.uk/greeting-cards.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://rmoart.co.uk/exhibitions.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/current-exhibitions.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/upcoming-exhibitions.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/previous-exhibitions.html</loc>
   </url>
 
   <url>
     <loc>https://rmoart.co.uk/sales.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
-  <loc>https://rmoart.co.uk/art/chasing-the-storm.html</loc>
-  <lastmod>2026-06-18</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
+    <loc>https://rmoart.co.uk/art/chasing-the-storm.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/agios-nikolais-in-santorini.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/autumn-glow.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/lower-pool.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/castle-st-south.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/glen-coe.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/hill-top-house.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/heading-out.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/hilbre-island-no1.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/fire-and-sea.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/back-from-the-sea.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/hilbre-island-no2.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/rendezvous.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/old-jail.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/river-dee-estuary-shore.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/stories-to-tell.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/winter-glow.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rmoart.co.uk/art/lookout-tower.html</loc>
+  </url>
 
 </urlset>
