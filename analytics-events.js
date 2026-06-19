@@ -53,6 +53,17 @@ document.addEventListener('click', function (event) {
     });
   }
 
+  if (text.toLowerCase().includes('view card details')) {
+    gtag('event', 'view_card_details_click', {
+      item_title: itemTitle,
+      item_meta: itemMeta,
+      item_price: itemPrice,
+      link_text: text,
+      link_url: href,
+      page_path: window.location.pathname
+    });
+  }
+
   if (href.includes('facebook.com')) {
     gtag('event', 'social_click', {
       platform: 'Facebook',
