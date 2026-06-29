@@ -675,6 +675,32 @@ a.art-card:hover {
   z-index: 5;
 }
 
+/* Breadcrumbs */
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 24px;
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.breadcrumbs a:hover {
+  color: var(--ink);
+}
+
+.breadcrumbs span:last-child {
+  color: var(--ink);
+}
+
 /* Footer */
 
 .footer {

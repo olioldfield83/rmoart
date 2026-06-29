@@ -6,16 +6,7 @@
   <title>Gallery | RMO Art</title>
   <meta name="description" content="Original artwork by Richard Oldfield. Browse watercolours, urban sketching, oil, acrylic, portraits and greeting cards.">
   <link rel="stylesheet" href="styles.css">
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-75J8XZVFWK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-75J8XZVFWK');
-</script>
+  <link rel="stylesheet" href="cookie-banner.css">
 </head>
 <body>
 
@@ -25,7 +16,7 @@
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
+      <a href="gallery.html" class="active">Gallery</a>
       <a href="exhibitions.html">Exhibitions</a>
       <a href="sales.html">Sales</a>
     </div>
@@ -41,7 +32,7 @@
 
     <div class="grid two">
       <a class="art-card" href="watercolours.html">
-        <img class="art-image" src="assets/images/sailing_storm.jpeg" alt="Watercolour paintings">
+        <img class="art-image" src="assets/images/rhodes_jail.jpg" alt="Watercolour paintings by Richard Oldfield">
         <div class="art-body">
           <span class="badge">Watercolours</span>
           <h3>Watercolours</h3>
@@ -50,7 +41,7 @@
       </a>
 
       <a class="art-card" href="urban-sketching.html">
-        <img class="art-image" src="assets/images/Sketches/Three-Graces-Liverpool.jpg" alt="Urban sketch of Liverpool">
+        <img class="art-image" src="assets/images/Sketches/Dell-Bridge-Port-Sunlight.jpg" alt="Urban sketch of Dell Bridge, Port Sunlight by Richard Oldfield">
         <div class="art-body">
           <span class="badge">Urban sketching</span>
           <h3>Urban Sketching</h3>
@@ -59,20 +50,11 @@
       </a>
 
       <a class="art-card" href="oil-acrylic.html">
-        <img class="art-image" src="assets/images/autumn_forest.jpeg" alt="Oil and acrylic paintings">
+        <img class="art-image" src="assets/images/autumn_forest.jpeg" alt="Oil and acrylic paintings by Richard Oldfield">
         <div class="art-body">
           <span class="badge">Oil & Acrylic</span>
           <h3>Oil & Acrylic</h3>
           <p>Bold colour and expressive original work.</p>
-        </div>
-      </a>
-
-      <a class="art-card" href="portraits.html">
-        <img class="art-image" src="assets/images/greek_steps.jpeg" alt="Portraits">
-        <div class="art-body">
-          <span class="badge">Portraits</span>
-          <h3>Portraits</h3>
-          <p>Character studies and portrait artwork.</p>
         </div>
       </a>
 
@@ -98,6 +80,9 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
+<script src="cookie-banner.js"></script>
+<script src="analytics-events.js"></script>
 
 </body>
 </html>
