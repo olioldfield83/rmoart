@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Deeside Art Group Exhibition 2025 | Previous Exhibition | RMO Art</title>
+  <meta name="description" content="Deeside Art Group Exhibition 2025 featuring artwork by Richard Oldfield.">
+
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../cookie-banner.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="../index.html"><span>RMO</span> Art</a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../gallery.html">Gallery</a>
+      <a href="../exhibitions.html" class="active">Exhibitions</a>
+      <a href="../sales.html">Sales</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="section">
+
+    <div class="section-head">
+      <a class="button secondary" href="../previous-exhibitions.html">← Back to Previous Exhibitions</a>
+      <div class="eyebrow">Previous exhibition</div>
+      <h1>Deeside Art Group Exhibition 2025</h1>
+      <p class="lede">
+        Artwork exhibited by Richard Oldfield at the Deeside Art Group Exhibition 2025.
+      </p>
+    </div>
+
+    <div class="panel">
+      <span class="badge">Previous exhibition</span>
+      <h2>Exhibition details</h2>
+      <p>
+        Richard Oldfield exhibited a selection of framed and mounted works, including watercolours
+        and pen and wash pieces.
+      </p>
+    </div>
+
+    <div class="section-head" style="margin-top: 58px;">
+      <h2>Exhibited works</h2>
+      <p class="lede">Works shown at the Deeside Art Group Exhibition 2025.</p>
+    </div>
+
+    <div class="grid three">
+
+      <article class="art-card">
+        <div class="sold-ribbon">Sold</div>
+        <img class="art-image lightbox-image" src="../assets/images/greek_steps.jpeg" alt="Hill Top House Serifos watercolour by Richard Oldfield">
+        <div class="art-body">
+          <span class="badge">Framed</span>
+          <h3>Hill Top House Serifos</h3>
+          <p class="meta">Watercolour</p>
+          <div class="price sold">Sold</div>
+          <a class="button primary" href="../art/hill-top-house.html">View artwork details</a>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <div class="sold-ribbon">Sold</div>
+        <img class="art-image lightbox-image" src="../assets/images/exhibitions/lily_pond.jpg" alt="Lily Pond Ness Gardens watercolour by Richard Oldfield">
+        <div class="art-body">
+          <span class="badge">Framed</span>
+          <h3>Lily Pond Ness Gardens</h3>
+          <p class="meta">Watercolour</p>
+          <div class="price sold">Sold</div>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <div class="sold-ribbon">Sold</div>
+        <img class="art-image lightbox-image" src="../assets/images/exhibitions/castellania_rhodes.jpg.png" alt="Castellania Rhodes pen and wash by Richard Oldfield">
+        <div class="art-body">
+          <span class="badge">Framed</span>
+          <h3>Castellania Rhodes</h3>
+          <p class="meta">Pen and wash</p>
+          <div class="price sold">Sold</div>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <div class="sold-ribbon">Sold</div>
+        <img class="art-image lightbox-image" src="../assets/images/exhibitions/Thornton_heath.jpg" alt="Thornton Heath watercolour by Richard Oldfield">
+        <div class="art-body">
+          <span class="badge">Mounted</span>
+          <h3>Thornton Heath</h3>
+          <p class="meta">Watercolour</p>
+          <div class="price sold">Sold</div>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <img class="art-image lightbox-image" src="../assets/images/sandbanks.jpeg" alt="Dee Estuary at Hilbre watercolour by Richard Oldfield">
+        <div class="art-body">
+          <span class="badge">Mounted</span>
+          <h3>Dee Estuary at Hilbre</h3>
+          <p class="meta">Watercolour</p>
+          <div class="price">£35</div>
+          <a class="button primary" href="../art/river-dee-estuary-shore.html">View artwork details</a>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <img class="art-image lightbox-image" src="../assets/images/houses_on_cliff.jpeg" alt="Hilbre Island watercolour by Richard Oldfield">
+        <div class="art-body">
+          <span class="badge">Mounted</span>
+          <h3>Hilbre Island</h3>
+          <p class="meta">Watercolour</p>
+          <div class="price">£35</div>
+          <a class="button primary" href="../art/hilbre-island-no1.html">View artwork details</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><strong>RMO Art</strong><br>Original art by Richard Oldfield</div>
+    <div>© <span id="year"></span> RMO Art · rmoart.co.uk</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close" aria-label="Close image">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption">
+      <h3 id="lightbox-title"></h3>
+      <p id="lightbox-meta"></p>
+      <p id="lightbox-price"></p>
+    </div>
+  </div>
+
+  <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+</div>
+
+<script src="../lightbox.js"></script>
+<script src="../cookie-banner.js"></script>
+<script src="../analytics-events.js"></script>
+
+</body>
+</html>
