@@ -6,16 +6,7 @@
   <title>Previous Exhibitions | RMO Art</title>
   <meta name="description" content="Previous exhibitions featuring artwork by Richard Oldfield.">
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-75J8XZVFWK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-75J8XZVFWK');
-</script>
+  <link rel="stylesheet" href="cookie-banner.css">
 </head>
 <body>
 
@@ -26,7 +17,7 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="gallery.html">Gallery</a>
-      <a href="exhibitions.html">Exhibitions</a>
+      <a href="exhibitions.html" class="active">Exhibitions</a>
       <a href="sales.html">Sales</a>
     </div>
   </nav>
@@ -37,16 +28,51 @@
     <div class="section-head">
       <a class="button secondary" href="exhibitions.html">← Back to Exhibitions</a>
       <h1>Previous Exhibitions</h1>
-      <p class="lede">Previous venues, displays and exhibitions featuring RMO Art.</p>
+      <p class="lede">Browse previous exhibitions featuring artwork by Richard Oldfield.</p>
     </div>
 
-    <div class="grid two">
-      <article class="info-card">
-        <span class="badge">Current display</span>
-        <h3>Venue name placeholder</h3>
-        <p class="meta">Town/city · dates here</p>
-        <p>Add details about the exhibition.</p>
-      </article>
+    <div class="grid three">
+
+      <a class="art-card" href="exhibitions/grosvenor-art-society-exhibition-2025.html">
+        <img class="art-image" src="assets/images/exhibitions/albert_dock.jpg" alt="Grosvenor Art Society Exhibition 2025">
+        <div class="art-body">
+          <span class="badge">Previous exhibition</span>
+          <h3>Grosvenor Art Society Exhibition 2025</h3>
+          <p>A selection of framed and mounted works including watercolours and pen and wash pieces.</p>
+          <p class="meta">2025 · Grosvenor Art Society</p>
+        </div>
+      </a>
+
+      <a class="art-card" href="exhibitions/deeside-art-group-exhibition-2025.html">
+        <img class="art-image" src="assets/images/greek_steps.jpeg" alt="Deeside Art Group Exhibition 2025">
+        <div class="art-body">
+          <span class="badge">Previous exhibition</span>
+          <h3>Deeside Art Group Exhibition 2025</h3>
+          <p>Framed and mounted works shown with Deeside Art Group.</p>
+          <p class="meta">2025 · Deeside Art Group</p>
+        </div>
+      </a>
+
+      <a class="art-card" href="exhibitions/haa-summer-exhibition-2025.html">
+        <img class="art-image" src="assets/images/exhibitions/lower_pool_ness.jpg" alt="Heswall Artists Association Summer Exhibition 2025">
+        <div class="art-body">
+          <span class="badge">Previous exhibition</span>
+          <h3>Heswall Artists Association Summer Exhibition 2025</h3>
+          <p>Works shown at Lighthouse Church Hall, Heswall.</p>
+          <p class="meta">2nd to 9th August 2025 · Heswall</p>
+        </div>
+      </a>
+
+      <a class="art-card" href="exhibitions/haa-exhibition-2024.html">
+        <img class="art-image" src="assets/images/exhibitions/autumn_tree.jpg" alt="Heswall Artists Association Exhibition 2024">
+        <div class="art-body">
+          <span class="badge">Previous exhibition</span>
+          <h3>Heswall Artists Association Exhibition 2024</h3>
+          <p>A collection of framed and mounted watercolours and pen and wash works.</p>
+          <p class="meta">2024 · Heswall Artists Association</p>
+        </div>
+      </a>
+
     </div>
   </section>
 </main>
@@ -61,6 +87,9 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
+<script src="cookie-banner.js"></script>
+<script src="analytics-events.js"></script>
 
 </body>
 </html>
