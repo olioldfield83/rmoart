@@ -4,18 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Oil & Acrylic | RMO Art</title>
-  <meta name="description" content="Original oil and acrylic paintings by Richard Oldfield.">
+  <meta name="description" content="Original oil, acrylic and mixed media paintings by Richard Oldfield.">
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-75J8XZVFWK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-75J8XZVFWK');
-</script>
+  <link rel="stylesheet" href="cookie-banner.css">
 </head>
 <body>
 
@@ -37,21 +28,59 @@
     <div class="section-head">
       <a class="button secondary" href="gallery.html">← Back to Gallery</a>
       <h1>Oil & Acrylic</h1>
-      <p class="lede">Bold, colourful original paintings created using oil and acrylic techniques.</p>
+      <p class="lede">Original oil, acrylic and mixed media paintings by Richard Oldfield.</p>
     </div>
 
     <div class="grid three">
+
       <article class="art-card">
-        <img class="art-image" src="assets/images/autumn_forest.jpeg" alt="Autumn forest path artwork">
+        <img class="art-image lightbox-image" src="assets/images/oil/spirits_glen_cloe.jpg" alt="Spirits of Glen Coe acrylic mixed media painting by Richard Oldfield">
         <div class="art-body">
           <span class="badge">Oil & Acrylic</span>
-          <h3>Sometimes the Path to Take Clearly Presents Itself</h3>
-          <p>There is always something magical at the season's turn, especially into autumn.</p>
-          <p class="meta">Original artwork · One of a kind</p>
+          <h3>Spirits of Glen Coe</h3>
+          <p>An atmospheric acrylic mixed media painting inspired by Glen Coe.</p>
+          <p class="meta">Acrylic mixed media on canvas · 50cm x 40cm</p>
           <div class="price">Price on enquiry</div>
-          <a class="button primary" href="mailto:richard@rmoart.co.uk?subject=Enquiry%20about%20Sometimes%20the%20Path%20to%20Take%20Clearly%20Presents%20Itself">Enquire about this artwork</a>
+          <a class="button primary" href="mailto:richard@rmoart.co.uk?subject=Enquiry%20about%20Spirits%20of%20Glen%20Coe">Enquire about this artwork</a>
         </div>
       </article>
+
+      <article class="art-card">
+        <img class="art-image lightbox-image" src="assets/images/oil/heswall_shore.jpg" alt="Heswall Shore oil painting by Richard Oldfield">
+        <div class="art-body">
+          <span class="badge">Oil & Acrylic</span>
+          <h3>Heswall Shore</h3>
+          <p>An original oil painting inspired by the shore at Heswall.</p>
+          <p class="meta">Oil on canvas · 50cm x 40cm</p>
+          <div class="price">Price on enquiry</div>
+          <a class="button primary" href="mailto:richard@rmoart.co.uk?subject=Enquiry%20about%20Heswall%20Shore">Enquire about this artwork</a>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <img class="art-image lightbox-image" src="assets/images/oil/canal_du_midi.jpg" alt="Canal du Midi oil painting by Richard Oldfield">
+        <div class="art-body">
+          <span class="badge">Oil & Acrylic</span>
+          <h3>Canal du Midi</h3>
+          <p>An original oil painting inspired by the Canal du Midi.</p>
+          <p class="meta">Oil on canvas · 50cm x 40cm</p>
+          <div class="price">Price on enquiry</div>
+          <a class="button primary" href="mailto:richard@rmoart.co.uk?subject=Enquiry%20about%20Canal%20du%20Midi">Enquire about this artwork</a>
+        </div>
+      </article>
+
+      <article class="art-card">
+        <img class="art-image lightbox-image" src="assets/images/oil/sunset_hoylake.jpg" alt="Sunset Hoylake mixed media painting by Richard Oldfield">
+        <div class="art-body">
+          <span class="badge">Oil & Acrylic</span>
+          <h3>Sunset Hoylake</h3>
+          <p>A mixed media painting inspired by sunset at Hoylake.</p>
+          <p class="meta">Mixed media · 50cm x 40cm · Mounted</p>
+          <div class="price">Price on enquiry</div>
+          <a class="button primary" href="mailto:richard@rmoart.co.uk?subject=Enquiry%20about%20Sunset%20Hoylake">Enquire about this artwork</a>
+        </div>
+      </article>
+
     </div>
   </section>
 </main>
@@ -66,6 +95,26 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close" aria-label="Close image">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption">
+      <h3 id="lightbox-title"></h3>
+      <p id="lightbox-meta"></p>
+      <p id="lightbox-price"></p>
+    </div>
+  </div>
+
+  <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+</div>
+
+<script src="lightbox.js"></script>
+<script src="cookie-banner.js"></script>
+<script src="analytics-events.js"></script>
 
 </body>
 </html>
