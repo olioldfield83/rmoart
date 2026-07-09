@@ -19,5 +19,6 @@ Professional static website starter for RMO Art.
 - `gallery.html` — Art gallery with categories
 - `exhibitions.html` — Exhibition information
 - `sales.html` — Sales and enquiries
+- 'art.html' - Individual pages for each artwork
 
 # rmoart
