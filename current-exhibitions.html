@@ -3,19 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Current Exhibitions | RMO Art</title>
   <meta name="description" content="Current exhibitions featuring artwork by Richard Oldfield.">
-  <link rel="stylesheet" href="styles.css">
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-75J8XZVFWK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-75J8XZVFWK');
-</script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cookie-banner.css">
 </head>
 <body>
 
@@ -26,7 +19,7 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="gallery.html">Gallery</a>
-      <a href="exhibitions.html">Exhibitions</a>
+      <a href="exhibitions.html" class="active">Exhibitions</a>
       <a href="sales.html">Sales</a>
     </div>
   </nav>
@@ -40,6 +33,23 @@
       <p class="lede">Current venues, displays and exhibitions featuring RMO Art.</p>
     </div>
 
+    <div class="panel">
+      <span class="badge">Current exhibitions</span>
+      <h2>No current exhibitions</h2>
+
+      <p>
+        Currently there are no current exhibitions displaying Richard Oldfield’s work.
+        Please view all upcoming exhibitions to see where RMO Art will be shown next.
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="upcoming-exhibitions.html">View upcoming exhibitions</a>
+        <a class="button secondary" href="gallery.html">View full gallery</a>
+      </div>
+    </div>
+  </section>
+</main>
+
 <footer class="footer">
   <div class="footer-inner">
     <div><strong>RMO Art</strong><br>Original art by Richard Oldfield</div>
@@ -50,6 +60,9 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
+<script src="cookie-banner.js"></script>
+<script src="analytics-events.js"></script>
 
 </body>
 </html>
