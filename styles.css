@@ -108,6 +108,12 @@ img {
   padding: 72px 22px 48px;
 }
 
+.home-hero-title-small {
+  font-size: clamp(1.6rem, 3vw, 2.6rem) !important;
+  line-height: 1.12 !important;
+  max-width: 850px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
