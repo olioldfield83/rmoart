@@ -830,3 +830,48 @@ a.art-card:hover {
     grid-template-columns: 1fr;
   }
 }
+/* Make four-card homepage sections more compact */
+.grid.four .art-card {
+  border-radius: 18px;
+}
+
+.grid.four .art-image {
+  height: 150px;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+.grid.four .art-body {
+  padding: 18px;
+}
+
+.grid.four .art-body h3 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.grid.four .art-body p {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.grid.four .meta {
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+@media (max-width: 980px) {
+  .grid.four .art-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 620px) {
+  .grid.four .art-image {
+    height: 170px;
+  }
+
+  .grid.four .art-body {
+    padding: 16px;
+  }
+}
