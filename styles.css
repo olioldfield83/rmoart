@@ -812,8 +812,10 @@ a.art-card:hover {
   .commission-form .button {
     width: 100%;
   }
+}
 
-  .grid.four {
+/* Four-card gallery collection grid */
+.grid.four {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
@@ -827,5 +829,4 @@ a.art-card:hover {
   .grid.four {
     grid-template-columns: 1fr;
   }
-}
 }
