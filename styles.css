@@ -931,3 +931,54 @@ a.art-card:hover {
     min-height: 40px;
   }
 }
+
+/* Compact homepage information panels */
+.mini-panel-grid {
+  gap: 16px;
+}
+
+.mini-panel {
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(31, 23, 38, 0.09);
+}
+
+.mini-panel .eyebrow {
+  font-size: 0.72rem;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+}
+
+.mini-panel h2 {
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  line-height: 1.12;
+  margin-bottom: 10px;
+  letter-spacing: -0.025em;
+}
+
+.mini-panel p {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.mini-panel .actions {
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.mini-panel .button {
+  min-height: 38px;
+  padding: 8px 14px;
+  font-size: 0.84rem;
+}
+
+@media (max-width: 620px) {
+  .mini-panel {
+    padding: 16px;
+  }
+
+  .mini-panel .button {
+    width: 100%;
+  }
+}
